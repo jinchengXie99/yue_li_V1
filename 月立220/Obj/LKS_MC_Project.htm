@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\LKS_MC_Project.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\LKS_MC_Project.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Tue Mar 12 16:31:40 2024
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Mar 13 17:19:33 2024
 <BR><P>
 <H3>Maximum Stack Usage =        216 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -247,7 +247,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_lmul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FluxObserveParaCalc
-<LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedPIRegulator
+<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedPIRegulator
 </UL>
 
 <P><STRONG><a name="[11a]"></a>_ll_mul</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, llmul.o(.text), UNUSED)
@@ -332,10 +332,11 @@ Global Symbols
 
 <P><STRONG><a name="[124]"></a>_d2f</STRONG> (Thumb, 120 bytes, Stack size 12 bytes, d2f.o(.text), UNUSED)
 
-<P><STRONG><a name="[e1]"></a>__aeabi_dadd</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, daddsub.o(.text))
+<P><STRONG><a name="[c1]"></a>__aeabi_dadd</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, daddsub.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_dadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 </UL>
 
 <P><STRONG><a name="[36]"></a>_dadd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, daddsub.o(.text), UNUSED)
@@ -346,9 +347,9 @@ Global Symbols
 <P><STRONG><a name="[9b]"></a>__aeabi_dsub</STRONG> (Thumb, 0 bytes, Stack size 8 bytes, daddsub.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __aeabi_dsub
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
+<BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_tempreture_num
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 </UL>
 
 <P><STRONG><a name="[39]"></a>_dsub</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, daddsub.o(.text), UNUSED)
@@ -384,10 +385,11 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[3c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
 </UL>
 
-<P><STRONG><a name="[e2]"></a>__aeabi_d2iz</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, dfixi.o(.text))
+<P><STRONG><a name="[c2]"></a>__aeabi_d2iz</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, dfixi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = __aeabi_d2iz
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppVolTrans
+<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 </UL>
 
@@ -450,18 +452,18 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FluxObserveParaCalc
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppVolTrans
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_tempreture_num
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 </UL>
 
 <P><STRONG><a name="[12b]"></a>_dmul</STRONG> (Thumb, 558 bytes, Stack size 56 bytes, dmul.o(.text), UNUSED)
 
 <P><STRONG><a name="[9a]"></a>__aeabi_f2d</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, f2d.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppVolTrans
-<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 <LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
 <LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_tempreture_num
+<LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 </UL>
 
 <P><STRONG><a name="[12c]"></a>_f2d</STRONG> (Thumb, 80 bytes, Stack size 0 bytes, f2d.o(.text), UNUSED)
@@ -486,10 +488,9 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppFreqTrans
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FluxObserveParaCalc
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
-<LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
 </UL>
 
 <P><STRONG><a name="[12d]"></a>_ffix</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, ffixi.o(.text), UNUSED)
@@ -512,7 +513,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppFreqTrans
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
 </UL>
 
 <P><STRONG><a name="[12f]"></a>_ffltu</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflti.o(.text), UNUSED)
@@ -561,9 +562,9 @@ Global Symbols
 
 <P><STRONG><a name="[134]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[135]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
+<P><STRONG><a name="[135]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
-<P><STRONG><a name="[136]"></a>__decompress0</STRONG> (Thumb, 58 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
+<P><STRONG><a name="[136]"></a>__decompress1</STRONG> (Thumb, 86 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
 
 <P><STRONG><a name="[137]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 
@@ -603,7 +604,7 @@ Global Symbols
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_NormalModeCFG
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentOffsetCalibration
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 </UL>
@@ -618,15 +619,15 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[7c]"></a>App2CoreCurTrans</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, app2core.o(i.App2CoreCurTrans))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultInit
 </UL>
 
 <P><STRONG><a name="[7f]"></a>App2CoreFreqTrans</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, app2core.o(i.App2CoreFreqTrans))
-<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR><BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetVdcSpeed
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultInit
 </UL>
@@ -636,7 +637,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FWLoopPIReg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
 </UL>
 
 <P><STRONG><a name="[1e]"></a>Btn1_Dowm_CallBack</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, user_app.o(i.Btn1_Dowm_CallBack))
@@ -668,7 +669,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Button_Cycle_Process
 </UL>
-<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick20ms
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick20ms
 </UL>
 
 <P><STRONG><a name="[15]"></a>CMP_IRQHandler</STRONG> (Thumb, 88 bytes, Stack size 16 bytes, interrupt.o(i.CMP_IRQHandler))
@@ -700,7 +701,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 </UL>
 
-<P><STRONG><a name="[d6]"></a>Clock_Init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, hardware_init.o(i.Clock_Init))
+<P><STRONG><a name="[d8]"></a>Clock_Init</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, hardware_init.o(i.Clock_Init))
 <BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 </UL>
 
@@ -710,18 +711,18 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_IRQHandler
 </UL>
 
-<P><STRONG><a name="[d0]"></a>CurrentLoopAxisD_Set</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, state_machine.o(i.CurrentLoopAxisD_Set))
+<P><STRONG><a name="[d2]"></a>CurrentLoopAxisD_Set</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, state_machine.o(i.CurrentLoopAxisD_Set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CurrentLoopAxisD_Set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
 </UL>
 
-<P><STRONG><a name="[d1]"></a>CurrentLoopAxisQ_Set</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, state_machine.o(i.CurrentLoopAxisQ_Set))
+<P><STRONG><a name="[d3]"></a>CurrentLoopAxisQ_Set</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, state_machine.o(i.CurrentLoopAxisQ_Set))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = CurrentLoopAxisQ_Set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
 </UL>
 
 <P><STRONG><a name="[67]"></a>CurrentLoopReg</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, foc_drive.o(i.CurrentLoopReg))
@@ -771,10 +772,10 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;i2c_dma_init
 </UL>
 
-<P><STRONG><a name="[da]"></a>DcVoltPerUnitCalc</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, fluxobserve.o(i.DcVoltPerUnitCalc))
+<P><STRONG><a name="[dc]"></a>DcVoltPerUnitCalc</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, fluxobserve.o(i.DcVoltPerUnitCalc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = DcVoltPerUnitCalc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[4d]"></a>DcVoltPerUnitCalcInt</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, fluxobserve.o(i.DcVoltPerUnitCalcInt))
@@ -793,7 +794,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProgramPage
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseSector
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
 </UL>
 
 <P><STRONG><a name="[83]"></a>FOC_InitstruParam</STRONG> (Thumb, 88 bytes, Stack size 20 bytes, foc_drive.o(i.FOC_InitstruParam))
@@ -831,7 +832,7 @@ Global Symbols
 <LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultStallCheck
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultPhaseCheck
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[4f]"></a>FaultCurrentCheck</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, fault_detection.o(i.FaultCurrentCheck))
@@ -851,7 +852,7 @@ Global Symbols
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreCurTrans
 <LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppVolTrans
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_init
 </UL>
 
@@ -863,10 +864,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultCheck
 </UL>
 
-<P><STRONG><a name="[cb]"></a>FaultRecover</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, fault_detection.o(i.FaultRecover))
+<P><STRONG><a name="[cd]"></a>FaultRecover</STRONG> (Thumb, 110 bytes, Stack size 12 bytes, fault_detection.o(i.FaultRecover))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = FaultRecover
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateFault
+<BR>[Called By]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateFault
 </UL>
 
 <P><STRONG><a name="[80]"></a>FaultRecoverInit</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, fault_detection.o(i.FaultRecoverInit))
@@ -942,14 +943,14 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FluxObserveInit
 </UL>
 
-<P><STRONG><a name="[c2]"></a>Flux_OBS_ParaInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, fluxobserve.o(i.Flux_OBS_ParaInit))
-<BR><BR>[Called By]<UL><LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PmsmFluxObIni
+<P><STRONG><a name="[c4]"></a>Flux_OBS_ParaInit</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, fluxobserve.o(i.Flux_OBS_ParaInit))
+<BR><BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PmsmFluxObIni
 </UL>
 
-<P><STRONG><a name="[e3]"></a>FunStateCharge</STRONG> (Thumb, 162 bytes, Stack size 20 bytes, user_app.o(i.FunStateCharge))
+<P><STRONG><a name="[e3]"></a>FunStateCharge</STRONG> (Thumb, 164 bytes, Stack size 20 bytes, user_app.o(i.FunStateCharge))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = FunStateCharge
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
 </UL>
 
 <P><STRONG><a name="[12]"></a>GPIO_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.GPIO_IRQHandler))
@@ -1002,7 +1003,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[e4]"></a>GetHeartNTCTemp</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, user_app.o(i.GetHeartNTCTemp))
-<BR><BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
+<BR><BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
 </UL>
 
 <P><STRONG><a name="[95]"></a>GetVdcSpeed</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, user_app.o(i.GetVdcSpeed))
@@ -1011,7 +1012,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppFreqTrans
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreFreqTrans
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[96]"></a>Get_Power</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, user_app.o(i.Get_Power))
@@ -1019,10 +1020,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PowerCalc
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
 </UL>
 
-<P><STRONG><a name="[98]"></a>Get_tempreture_num</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, user_app.o(i.Get_tempreture_num))
+<P><STRONG><a name="[98]"></a>Get_tempreture_num</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, temp_sample.o(i.Get_tempreture_num))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = Get_tempreture_num &rArr; __aeabi_ddiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fdiv
@@ -1033,7 +1034,7 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
 </UL>
 
 <P><STRONG><a name="[13]"></a>HALL_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.HALL_IRQHandler))
@@ -1096,13 +1097,13 @@ Global Symbols
 <P><STRONG><a name="[e5]"></a>HeaterControl_1ms</STRONG> (Thumb, 176 bytes, Stack size 8 bytes, heatcontrol.o(i.HeaterControl_1ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = HeaterControl_1ms
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
 </UL>
 
-<P><STRONG><a name="[de]"></a>HeaterTemperature_Control</STRONG> (Thumb, 194 bytes, Stack size 20 bytes, heatcontrol.o(i.HeaterTemperature_Control))
+<P><STRONG><a name="[e0]"></a>HeaterTemperature_Control</STRONG> (Thumb, 194 bytes, Stack size 20 bytes, heatcontrol.o(i.HeaterTemperature_Control))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = HeaterTemperature_Control
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[10]"></a>I2C_IRQHandler</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, interrupt.o(i.I2C_IRQHandler))
@@ -1152,7 +1153,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadInputDataBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
+<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
 </UL>
 
 <P><STRONG><a name="[b4]"></a>LCD_Process</STRONG> (Thumb, 154 bytes, Stack size 16 bytes, user_app.o(i.LCD_Process))
@@ -1166,7 +1167,7 @@ Global Symbols
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IIC_Write_Reg
 <LI><a href="#[b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_demarcate
 </UL>
-<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick20ms
+<BR>[Called By]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick20ms
 <LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1217,7 +1218,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPWM_StructInit
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPWM_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 </UL>
 
@@ -1233,22 +1234,23 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[67]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopReg
 </UL>
 
-<P><STRONG><a name="[bf]"></a>NTC_R_change</STRONG> (Thumb, 1456 bytes, Stack size 16 bytes, user_app.o(i.NTC_R_change))
+<P><STRONG><a name="[bf]"></a>NTC_R_change</STRONG> (Thumb, 978 bytes, Stack size 16 bytes, temp_sample.o(i.NTC_R_change))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = NTC_R_change &rArr; __aeabi_ddiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
-<BR>[Called By]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
+<BR>[Called By]<UL><LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
 </UL>
 
-<P><STRONG><a name="[cc]"></a>OnTheFlyDetectInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fluxobserve.o(i.OnTheFlyDetectInit))
-<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<P><STRONG><a name="[ce]"></a>OnTheFlyDetectInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, fluxobserve.o(i.OnTheFlyDetectInit))
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 </UL>
 
 <P><STRONG><a name="[71]"></a>OpenCloseAngleSwitch</STRONG> (Thumb, 54 bytes, Stack size 12 bytes, fluxobserve.o(i.OpenCloseAngleSwitch))
@@ -1257,8 +1259,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_Model
 </UL>
 
-<P><STRONG><a name="[c7]"></a>OpenLoopCurRamp</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, process_control.o(i.OpenLoopCurRamp))
-<BR><BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateAlign
+<P><STRONG><a name="[c9]"></a>OpenLoopCurRamp</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, process_control.o(i.OpenLoopCurRamp))
+<BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateAlign
 </UL>
 
 <P><STRONG><a name="[a2]"></a>PGA_Init</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, hardware_init.o(i.PGA_Init))
@@ -1270,10 +1272,10 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[51]"></a>PWMOutputs</STRONG> (Thumb, 34 bytes, Stack size 0 bytes, lks32mc03x_mcpwm.o(i.PWMOutputs))
-<BR><BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateFault
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR><BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateFault
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentOffsetCalibration
 <LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultCurrentCheck
 <LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPWM0_IRQHandler
@@ -1285,12 +1287,12 @@ Global Symbols
 <LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultPhaseCheck
 </UL>
 
-<P><STRONG><a name="[c1]"></a>PmsmFluxObIni</STRONG> (Thumb, 136 bytes, Stack size 20 bytes, fluxobserve.o(i.PmsmFluxObIni))
+<P><STRONG><a name="[c3]"></a>PmsmFluxObIni</STRONG> (Thumb, 136 bytes, Stack size 20 bytes, fluxobserve.o(i.PmsmFluxObIni))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = PmsmFluxObIni
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flux_OBS_ParaInit
+<BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Flux_OBS_ParaInit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 </UL>
 
 <P><STRONG><a name="[70]"></a>PmsmFluxObserve</STRONG> (Thumb, 194 bytes, Stack size 20 bytes, fluxobserve.o(i.PmsmFluxObserve))
@@ -1344,7 +1346,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[64]"></a>SYS_ModuleClockCmd</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, lks32mc03x_sys.o(i.SYS_ModuleClockCmd))
-<BR><BR>[Called By]<UL><LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimerInit
+<BR><BR>[Called By]<UL><LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimerInit
 <LI><a href="#[bd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPWM_Init
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HALL_Init
@@ -1357,7 +1359,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Init
 </UL>
 
-<P><STRONG><a name="[c3]"></a>Search_Button</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, button.o(i.Search_Button))
+<P><STRONG><a name="[c5]"></a>Search_Button</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, button.o(i.Search_Button))
 <BR><BR>[Called By]<UL><LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print_Btn_Info
 </UL>
 
@@ -1367,131 +1369,131 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 </UL>
 
-<P><STRONG><a name="[c4]"></a>SpeedLoopReg</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, foc_drive.o(i.SpeedLoopReg))
+<P><STRONG><a name="[c6]"></a>SpeedLoopReg</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, foc_drive.o(i.SpeedLoopReg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = SpeedLoopReg &rArr; SpeedPIRegulator &rArr; __aeabi_lmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedPIRegulator
+<BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedPIRegulator
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
-</UL>
-
-<P><STRONG><a name="[d3]"></a>SpeedLoop_Set</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, state_machine.o(i.SpeedLoop_Set))
-<BR><BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
 </UL>
 
-<P><STRONG><a name="[c5]"></a>SpeedPIRegulator</STRONG> (Thumb, 214 bytes, Stack size 56 bytes, pid_regulators.o(i.SpeedPIRegulator))
+<P><STRONG><a name="[d5]"></a>SpeedLoop_Set</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, state_machine.o(i.SpeedLoop_Set))
+<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+</UL>
+
+<P><STRONG><a name="[c7]"></a>SpeedPIRegulator</STRONG> (Thumb, 214 bytes, Stack size 56 bytes, pid_regulators.o(i.SpeedPIRegulator))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = SpeedPIRegulator &rArr; __aeabi_lmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_lmul
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedLoopReg
+<BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedLoopReg
 </UL>
 
-<P><STRONG><a name="[cf]"></a>SpeedReferenceGen</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, process_control.o(i.SpeedReferenceGen))
-<BR><BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<P><STRONG><a name="[d1]"></a>SpeedReferenceGen</STRONG> (Thumb, 46 bytes, Stack size 0 bytes, process_control.o(i.SpeedReferenceGen))
+<BR><BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
 </UL>
 
-<P><STRONG><a name="[c6]"></a>StateAlign</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, state_machine.o(i.StateAlign))
+<P><STRONG><a name="[c8]"></a>StateAlign</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, state_machine.o(i.StateAlign))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = StateAlign &rArr; User2AppCurTrans &rArr; __aeabi_fmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenLoopCurRamp
+<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenLoopCurRamp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
-<P><STRONG><a name="[c8]"></a>StateCharge</STRONG> (Thumb, 244 bytes, Stack size 24 bytes, state_machine.o(i.StateCharge))
+<P><STRONG><a name="[ca]"></a>StateCharge</STRONG> (Thumb, 244 bytes, Stack size 24 bytes, state_machine.o(i.StateCharge))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = StateCharge &rArr; MCPWM_init &rArr; MCPWM_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputs
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MCPWM_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
-<P><STRONG><a name="[ca]"></a>StateFault</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, state_machine.o(i.StateFault))
+<P><STRONG><a name="[cc]"></a>StateFault</STRONG> (Thumb, 22 bytes, Stack size 8 bytes, state_machine.o(i.StateFault))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = StateFault &rArr; FaultRecover
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultRecover
+<BR>[Calls]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultRecover
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
-<P><STRONG><a name="[c9]"></a>StateInit</STRONG> (Thumb, 522 bytes, Stack size 24 bytes, state_machine.o(i.StateInit))
+<P><STRONG><a name="[cb]"></a>StateInit</STRONG> (Thumb, 522 bytes, Stack size 24 bytes, state_machine.o(i.StateInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = StateInit &rArr; FaultInit &rArr; User2AppVolTrans &rArr; __aeabi_ddiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppFreqTrans
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
-<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PmsmFluxObIni
-<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OnTheFlyDetectInit
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
+<LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PmsmFluxObIni
+<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OnTheFlyDetectInit
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreFreqTrans
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreCurTrans
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultInit
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputs
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
-<P><STRONG><a name="[ce]"></a>StateOpen</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, state_machine.o(i.StateOpen))
+<P><STRONG><a name="[d0]"></a>StateOpen</STRONG> (Thumb, 196 bytes, Stack size 24 bytes, state_machine.o(i.StateOpen))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = StateOpen &rArr; User2AppFreqTrans &rArr; __aeabi_fmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppFreqTrans
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedReferenceGen
+<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedReferenceGen
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreFreqTrans
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreCurTrans
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisQ_Set
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisD_Set
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisQ_Set
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisD_Set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
-<P><STRONG><a name="[d2]"></a>StateRun</STRONG> (Thumb, 468 bytes, Stack size 24 bytes, state_machine.o(i.StateRun))
+<P><STRONG><a name="[d4]"></a>StateRun</STRONG> (Thumb, 468 bytes, Stack size 24 bytes, state_machine.o(i.StateRun))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = StateRun &rArr; SpeedLoopReg &rArr; SpeedPIRegulator &rArr; __aeabi_lmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedLoopReg
+<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedLoopReg
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AutoFieldWeakReg
 <LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;App2CoreCurTrans
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedLoop_Set
-<LI><a href="#[d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisQ_Set
-<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisD_Set
+<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SpeedLoop_Set
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisQ_Set
+<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CurrentLoopAxisD_Set
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
-<P><STRONG><a name="[d5]"></a>StateStop</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, state_machine.o(i.StateStop))
-<BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<P><STRONG><a name="[d7]"></a>StateStop</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, state_machine.o(i.StateStop))
+<BR><BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 </UL>
 
 <P><STRONG><a name="[b]"></a>SysTick_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.SysTick_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lks32mc03x.o(RESET)
 </UL>
-<P><STRONG><a name="[d4]"></a>Sys_State_Machine</STRONG> (Thumb, 240 bytes, Stack size 24 bytes, state_machine.o(i.Sys_State_Machine))
+<P><STRONG><a name="[d6]"></a>Sys_State_Machine</STRONG> (Thumb, 240 bytes, Stack size 24 bytes, state_machine.o(i.Sys_State_Machine))
 <BR><BR>[Stack]<UL><LI>Max Depth = 200<LI>Call Chain = Sys_State_Machine &rArr; StateCharge &rArr; MCPWM_init &rArr; MCPWM_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_common_switch8
-<LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateStop
-<LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateFault
-<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateAlign
+<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateStop
+<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateFault
+<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateCharge
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateAlign
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMOutputs
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[1a]"></a>SystemInit</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, hardware_init.o(i.SystemInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = SystemInit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clock_Init
+<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clock_Init
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_lks32mc03x.o(.text)
 </UL>
@@ -1501,7 +1503,7 @@ Global Symbols
 <P><STRONG><a name="[d]"></a>TIMER1_IRQHandler</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, interrupt.o(i.TIMER1_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lks32mc03x.o(RESET)
 </UL>
-<P><STRONG><a name="[d7]"></a>TIM_TimerInit</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, lks32mc03x_timer.o(i.TIM_TimerInit))
+<P><STRONG><a name="[d9]"></a>TIM_TimerInit</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, lks32mc03x_timer.o(i.TIM_TimerInit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIM_TimerInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYS_ModuleClockCmd
@@ -1513,20 +1515,20 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UTimer_init
 </UL>
 
-<P><STRONG><a name="[d8]"></a>Task_Scheduler</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, task_scheduler.o(i.Task_Scheduler))
+<P><STRONG><a name="[da]"></a>Task_Scheduler</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, task_scheduler.o(i.Task_Scheduler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = Task_Scheduler &rArr; Sys_State_Machine &rArr; StateCharge &rArr; MCPWM_init &rArr; MCPWM_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vLoadForFlashing
-<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick500ms
-<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick20ms
-<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
-<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
-<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_circulation
-<LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
-<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HeaterTemperature_Control
+<BR>[Calls]<UL><LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;vLoadForFlashing
+<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick500ms
+<LI><a href="#[df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick20ms
+<LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick1ms
+<LI><a href="#[dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_APP_vTick10ms
+<LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Temp_circulation
+<LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HeaterTemperature_Control
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetVdcSpeed
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultCheck
-<LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DcVoltPerUnitCalc
+<LI><a href="#[dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DcVoltPerUnitCalc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1539,19 +1541,19 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 </UL>
 
-<P><STRONG><a name="[dc]"></a>Temp_circulation</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, user_app.o(i.Temp_circulation))
-<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<P><STRONG><a name="[de]"></a>Temp_circulation</STRONG> (Thumb, 52 bytes, Stack size 0 bytes, user_app.o(i.Temp_circulation))
+<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
-<P><STRONG><a name="[b5]"></a>Temp_demarcate</STRONG> (Thumb, 386 bytes, Stack size 24 bytes, user_app.o(i.Temp_demarcate))
+<P><STRONG><a name="[b5]"></a>Temp_demarcate</STRONG> (Thumb, 372 bytes, Stack size 24 bytes, user_app.o(i.Temp_demarcate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = Temp_demarcate &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Process
 </UL>
@@ -1566,7 +1568,7 @@ Global Symbols
 <P><STRONG><a name="[14]"></a>UART_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, interrupt.o(i.UART_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_lks32mc03x.o(RESET)
 </UL>
-<P><STRONG><a name="[db]"></a>USER_APP_vTick10ms</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, user_app.o(i.USER_APP_vTick10ms))
+<P><STRONG><a name="[dd]"></a>USER_APP_vTick10ms</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, user_app.o(i.USER_APP_vTick10ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = USER_APP_vTick10ms &rArr; NTC_R_change &rArr; __aeabi_ddiv
 </UL>
 <BR>[Calls]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NTC_R_change
@@ -1575,32 +1577,32 @@ Global Symbols
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetHeartNTCTemp
 <LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FunStateCharge
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
-<P><STRONG><a name="[d9]"></a>USER_APP_vTick1ms</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, user_app.o(i.USER_APP_vTick1ms))
+<P><STRONG><a name="[db]"></a>USER_APP_vTick1ms</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, user_app.o(i.USER_APP_vTick1ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = USER_APP_vTick1ms &rArr; EraseWriteFlash &rArr; ProgramPage
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HeaterControl_1ms
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Speed
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EraseWriteFlash
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
-<P><STRONG><a name="[dd]"></a>USER_APP_vTick20ms</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, user_app.o(i.USER_APP_vTick20ms))
+<P><STRONG><a name="[df]"></a>USER_APP_vTick20ms</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, user_app.o(i.USER_APP_vTick20ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = USER_APP_vTick20ms &rArr; LCD_Process &rArr; Temp_demarcate &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Process
 <LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Button_Process
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
-<P><STRONG><a name="[e0]"></a>USER_APP_vTick500ms</STRONG> (Thumb, 324 bytes, Stack size 32 bytes, user_app.o(i.USER_APP_vTick500ms))
+<P><STRONG><a name="[e2]"></a>USER_APP_vTick500ms</STRONG> (Thumb, 324 bytes, Stack size 32 bytes, user_app.o(i.USER_APP_vTick500ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = USER_APP_vTick500ms
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[e6]"></a>USER_GPIO_Init</STRONG> (Thumb, 150 bytes, Stack size 32 bytes, user_app.o(i.USER_GPIO_Init))
@@ -1629,19 +1631,19 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = UTimer_init &rArr; TIM_TimerInit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimerStrutInit
-<LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimerInit
+<LI><a href="#[d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimerInit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 </UL>
 
-<P><STRONG><a name="[cd]"></a>User2AppAngleTrans</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, app2core.o(i.User2AppAngleTrans))
+<P><STRONG><a name="[cf]"></a>User2AppAngleTrans</STRONG> (Thumb, 30 bytes, Stack size 16 bytes, app2core.o(i.User2AppAngleTrans))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = User2AppAngleTrans &rArr; __aeabi_fmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
 </UL>
-<BR>[Called By]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 </UL>
 
 <P><STRONG><a name="[7b]"></a>User2AppCurTrans</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, app2core.o(i.User2AppCurTrans))
@@ -1651,10 +1653,10 @@ Global Symbols
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
-<LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
-<LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateAlign
+<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateRun
+<LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateAlign
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultInit
 </UL>
 
@@ -1665,8 +1667,8 @@ Global Symbols
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2f
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
-<LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
+<BR>[Called By]<UL><LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateOpen
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StateInit
 <LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetVdcSpeed
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultInit
 </UL>
@@ -1676,7 +1678,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 </UL>
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultRecoverInit
@@ -1701,7 +1703,7 @@ Global Symbols
 <P><STRONG><a name="[74]"></a>__ARM_common_switch8</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, state_machine.o(i.__ARM_common_switch8))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_common_switch8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
+<BR>[Called By]<UL><LI><a href="#[d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Sys_State_Machine
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FaultCheck
 <LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_PinAFConfig
 </UL>
@@ -1783,7 +1785,7 @@ Global Symbols
 <P><STRONG><a name="[28]"></a>main</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 216<LI>Call Chain = main &rArr; Task_Scheduler &rArr; Sys_State_Machine &rArr; StateCharge &rArr; MCPWM_init &rArr; MCPWM_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<BR>[Calls]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sys_init
 <LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Hardware_init
 <LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USER_Init
@@ -1811,8 +1813,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[df]"></a>vLoadForFlashing</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, user_app.o(i.vLoadForFlashing))
-<BR><BR>[Called By]<UL><LI><a href="#[d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
+<P><STRONG><a name="[e1]"></a>vLoadForFlashing</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, user_app.o(i.vLoadForFlashing))
+<BR><BR>[Called By]<UL><LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Task_Scheduler
 </UL>
 
 <P><STRONG><a name="[84]"></a>__aeabi_fmul</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, fmul.o(x$fpl$fmul))
@@ -1820,7 +1822,7 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppFreqTrans
 <LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppCurTrans
-<LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
+<LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;User2AppAngleTrans
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FluxObserveParaCalc
 </UL>
 
@@ -1856,7 +1858,7 @@ Local Symbols
 <P><STRONG><a name="[60]"></a>Print_Btn_Info</STRONG> (Thumb, 8 bytes, Stack size 4 bytes, button.o(i.Print_Btn_Info))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = Print_Btn_Info
 </UL>
-<BR>[Calls]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Search_Button
+<BR>[Calls]<UL><LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Search_Button
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Button_Create
 </UL>

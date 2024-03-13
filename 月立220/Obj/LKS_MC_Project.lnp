@@ -38,6 +38,7 @@
 ".\obj\user_app.o"
 ".\obj\lcd.o"
 ".\obj\button.o"
+".\obj\temp_sample.o"
 --strict --scatter ".\Obj\LKS_MC_Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

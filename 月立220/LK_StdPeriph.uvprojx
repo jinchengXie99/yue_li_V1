@@ -186,6 +186,7 @@
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
+            <nBranchProt>0</nBranchProt>
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -642,6 +643,16 @@
               <FileName>button.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\USER_APP\button.h</FilePath>
+            </File>
+            <File>
+              <FileName>temp_sample.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USER_APP\temp_sample.c</FilePath>
+            </File>
+            <File>
+              <FileName>temp_sample.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\USER_APP\temp_sample.h</FilePath>
             </File>
           </Files>
         </Group>
